@@ -15,7 +15,12 @@
           "hostPort": "4532",
           "protocol": "tcp"
         }
-
+      ],
+      "environmentFiles": [
+        {
+          "value": "arn:aws:s3:::camworld-backend/.env",
+          "type": "s3"
+        }
       ]
     }
   ],
