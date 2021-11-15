@@ -2,8 +2,8 @@ FROM node:14-alpine3.12
 
 WORKDIR /usr/src/app
 
-COPY env_vars.sh env_vars.sh
-RUN chmod +x env_vars.sh
+COPY env_vars.sh /usr/src/appenv_vars.sh
+RUN chmod +x /usr/src/appenv_vars.sh
 ENTRYPOINT ["env_vars.sh"]
 
 COPY package*.json ./
