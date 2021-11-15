@@ -11,7 +11,7 @@
       "essential": true,
       "portMappings": [
         {
-          "containerPort": "4532",
+          "containerPort": "8080",
           "protocol": "tcp"
         }
 
