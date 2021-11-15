@@ -17,7 +17,7 @@ import {Brand} from "./brands/brands.model";
 @Module({
   imports: [
     ConfigModule.forRoot({
-      ignoreEnvFile: true
+      envFilePath: `.${process.env.NODE_ENV}.env`
     }),
     SequelizeModule.forRoot({
       dialect: 'postgres',
